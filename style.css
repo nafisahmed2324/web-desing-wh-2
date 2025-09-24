@@ -1,0 +1,145 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vw;
+    margin-top: 5vh;
+}
+
+.full-page {
+    margin: auto;
+    width: 80%;
+}
+
+.cv-container {
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.hader {
+
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.asite {
+    background-color: rgb(224, 225, 235);
+    grid-area: 2 / 1 / 3 / 2;
+    line-height: 1.5;
+}
+
+.content {
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.hader .con {
+    height: 240px;
+    padding: 20px 5px;
+    position: relative;
+}
+
+.hader .con .pic {
+    position: absolute;
+    border-radius: 50%;
+
+}
+
+.hader .con .pic img {
+    border-radius: 50%;
+    border: 10px solid rgb(96, 122, 238);
+}
+
+.hader .con .text {
+    border: 5px solid rgb(152, 152, 235);
+    margin-left: 140px;
+    border-radius: 25px;
+    height: 200px;
+    padding: 20px;
+    text-align: end;
+    line-height: 1.8;
+    font-size: 20px;
+    background-color: rgb(206, 212, 219);
+}
+
+.asite .con {
+    padding: 15px;
+}
+
+.asite .con .top-text {
+    height: 50%;
+}
+
+.asite .con .top-text span {
+    display: inline-block;
+    border-bottom: 2px solid black;
+}
+
+.asite .con .botum-text {
+    margin-top: 50%;
+}
+
+.asite .con .botum-text h2 {
+    display: inline-block;
+    border-bottom: 2px solid black;
+}
+
+.asite .con .botum-text ul {
+    margin-left: 5%;
+}
+
+.asite .con .botum-text ul li {
+    list-style-position: inside;
+}
+
+.content .con {
+    padding: 2% 0 0 2%;
+}
+
+.content .con .sec1 .exp {
+    line-height: 1.5;
+}
+
+.content .con .sec1 .exp ol {
+    padding: 0 0 0 5%;
+}
+
+.content .con .sec2 h3 {
+    margin: 2% 0;
+    display: inline-block;
+    border-bottom: 2px solid black;
+}
+
+.content .con .sec2 table {
+    width: 98%;
+
+}
+
+.content .con .sec2 table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.content .con .sec2 table th,
+td {
+    height: 2.5rem;
+}
+.content .con .sec3 h3{
+    display: inline-block;
+    border-bottom: 2px solid black;
+    margin: 5% 0 1% 0;
+}
+.content .con .sec3 .pi{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    line-height: 2.5;
+}
+
